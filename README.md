@@ -42,8 +42,6 @@ Run as a Static Web Page (Frontend Only)
 
 **Download or clone the repository:**
 
-git clone https://github.com/yourusername/classical-crypto-tool.git
-
 cd classical-crypto-tool
 
 **Open the file index.html in any web browser:**
