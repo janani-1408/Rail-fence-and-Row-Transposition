@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cipher Encrypt/Decrypt</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Transposition</h1>
+
+    <div class="input-group">
+      <label for="message">Message:</label>
+      <textarea id="message" placeholder="Enter your message here..."></textarea>
+    </div>
+
+    <div class="input-group">
+      <label for="railKey">Rail Fence Key:</label>
+      <input id="railKey" type="number" min="2" placeholder="Example: 3" />
+    </div>
+
+    <div class="input-group">
+      <label for="rowKey">Row Transposition Key:</label>
+      <input id="rowKey" type="text" placeholder="Example: 4312" />
+    </div>
+
+    <div class="buttons">
+      <button id="encryptBtn">Encrypt & Decrypt</button>
+    </div>
+
+    <div class="results">
+      <div class="result-block">
+    <h2>Results</h2>
+    <p><strong>Rail Fence Cipher</strong></p>
+    <p>Encrypted msg: <span id="railEncrypted" class="animated-text"></span></p>
+    <p>Decrypted msg: <span id="railDecrypted" class="animated-text"></span></p>
+
+    <p><strong>Row Transposition Cipher</strong></p>
+    <p>Encrypted msg: <span id="rowEncrypted" class="animated-text"></span></p>
+    <p>Decrypted msg: <span id="rowDecrypted" class="animated-text"></span></p>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.container {
+  background: rgba(0,0,0,0.55);
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 650px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.8);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.input-group {
+  margin-bottom: 1.2rem;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+textarea, input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  transition: box-shadow 0.3s ease;
+  resize: vertical;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+  box-shadow: 0 0 12px #91a7ff;
+}
+
+.buttons {
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+button {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 25px;
+  background: #91a7ff;
+  color: #222;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 15px #91a7ffaa;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background: #6f83e6;
+  box-shadow: 0 6px 20px #6f83e6cc;
+}
+
+.results {
+  margin-top: 2rem;
+  display: block;
+}
+
+.result-block {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(255,255,255,0.2);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.result-block h2 {
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #91a7ff;
+  padding-bottom: 0.3rem;
+  letter-spacing: 1px;
+}
+
+.animated-text {
+  display: inline-block;
+  min-height: 40px;
+  font-family: monospace;
+  font-size: 1.15rem;
+  color: #e0e0ff;
+  word-wrap: break-word;
+  animation: fadeInText 1s ease forwards;
+}
+
+/* Simple fade-in animation */
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+  .results {
+    grid-template-columns: 1fr;
+  }
+}
